@@ -7,7 +7,7 @@ class Guide::NodeView
     :cell,
     :template,
     :custom_show_partial,
-    :default_wrapper_css,
+    :layout_css_classes,
     :node_type,
     :can_be_rendered?, :to => :@node
 

@@ -50,7 +50,7 @@
       <%= content_tag :div,
                       :class => ["sg-scenario__container",
                                  "-status-#{scenario.options[:visibility] || :public}",
-                                 view.default_wrapper_css,
+                                 view.layout_css_classes,
                                  scenario.options.wrapper_css].join(" "),
                       :data => {
                         :view => "sgScenario"

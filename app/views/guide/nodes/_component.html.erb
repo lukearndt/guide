@@ -36,63 +36,32 @@
         </div>
         <div class="sg-banner__action">
           <% if scenario.options.show_submit_state? %>
-            <%= render 'guide/nodes/show_submit_state' %>
+            <%#= render 'guide/nodes/show_submit_state' %>
           <% end %>
-          <% if view.user_is_staff? %>
-            <%= link_to Guide::Engine.routes.url_helpers.scenario_path(
-                          :scenario_id => scenario_id,
-                          :node_path => view.node_path,
-                          :scenario_format => "html",
-                        ),
-                        :class =>"sg-banner__action-icon",
-                        :target => "_blank" do %>
-              <i class="e-icon -icon-link-ext -color-inherit -size-medium -margin-left">
-                <span class="e-icon__alt">Open in new tab</span>
-              </i>
-            <% end %>
-          <% end %>
+
+          <i class="material-icons">more_vert</i>
         </div>
       </div>
     </header>
 
-    <% if true %>
-      <% view.formats.each do |scenario_format| %>
-        <% if view.multiple_formats? %>
-          <h3 class="t-heading -size-xs h-spacing-above">
-            <%= t(scenario_format, :scope => 'styleguide.format')%>
-          </h3>
-        <% end %>
-        <%= content_tag :div,
-                        :class => ["sg-scenario__container",
-                                   "-status-#{scenario.options[:visibility] || :public}",
-                                   view.default_wrapper_css,
-                                   scenario.options.wrapper_css].join(" "),
-                        :data => {
-                          :view => "sgScenario"
-                        } do %>
-          <%= render  'guide/nodes/scenario_as_iframe',
-                      :scenario_id => scenario_id,
-                      :node_path => view.node_path,
-                      :scenario_format => scenario_format %>
-        <% end %>
+    <% view.formats.each do |scenario_format| %>
+      <% if view.multiple_formats? %>
+        <h3 class="t-heading -size-xs h-spacing-above">
+          <%= t(scenario_format, :scope => 'styleguide.format')%>
+        </h3>
       <% end %>
-    <% else %>
       <%= content_tag :div,
-                        :class => ["sg-scenario__container",
-                                   "-status-#{scenario.options[:visibility] || :public}",
-                                   view.default_wrapper_css,
-                                   scenario.options.wrapper_css].join(" "),
-                        :data => {
-                          :view => "sgScenario"
-                        } do %>
-        <% if view.uses_cells? %>
-          <%= cell(view.cell, scenario.view_model).call %>
-        <% else %>
-          <%= render  view.partial,
-                      :view => scenario.view_model,
-                      :presenter => scenario.view_model,
-                      :view_model => scenario.view_model %>
-        <% end %>
+                      :class => ["sg-scenario__container",
+                                 "-status-#{scenario.options[:visibility] || :public}",
+                                 view.layout_css_classes,
+                                 scenario.options.wrapper_css].join(" "),
+                      :data => {
+                        :view => "sgScenario"
+                      } do %>
+        <%= render  'guide/nodes/scenario_as_iframe',
+                    :scenario_id => scenario_id,
+                    :node_path => view.node_path,
+                    :scenario_format => scenario_format %>
       <% end %>
     <% end %>
   </section>

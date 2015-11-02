@@ -7,7 +7,7 @@ class Guide::Component < Guide::Node
     nil
   end
 
-  def default_wrapper_css
+  def layout_css_classes
     ''
   end
 

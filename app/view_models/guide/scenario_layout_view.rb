@@ -25,4 +25,12 @@ class Guide::ScenarioLayoutView
   def format
     @format
   end
+
+  def node_stylesheets
+    @node.stylesheets
+  end
+
+  def node_javascripts
+    @node.javascripts
+  end
 end
