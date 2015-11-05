@@ -55,11 +55,11 @@ class Guide::Component < Guide::Node
   end
 
   def stylesheets
-    []
+    Guide.configuration.default_stylesheets
   end
 
   def javascripts
-    []
+    Guide.configuration.default_javascripts
   end
 
   private
