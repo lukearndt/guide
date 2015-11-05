@@ -1,4 +1,4 @@
-class Guide::Content::Structures < Guide::Node
+class Guide::Content::Structures < Guide::Document
   contains :level_one
   contains :account, :visibility => :restricted
   contains :item

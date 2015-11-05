@@ -17,10 +17,10 @@
   <body class="e-guide">
     <% if @layout_view.format == 'html' %>
       <%= render  @layout_view.node_layout_template,
-                  :presenter => @layout_view.node_layout_presenter %>
+                  :presenter => @layout_view.node_layout_view_model %>
     <% else %>
       <%= render  "#{@layout_view.node_layout_template}.#{@layout_view.format}",
-                  :presenter => @layout_view.node_layout_presenter %>
+                  :presenter => @layout_view.node_layout_view_model %>
     <% end %>
 
     <% @layout_view.node_javascripts.each do |javascript|%>
