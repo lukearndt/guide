@@ -11,7 +11,7 @@ module Guide
   end
 
   class Configuration
-    attr_accessor :company_name, :project_name, :controller_class_to_inherit, :default_javascripts, :default_stylesheets
+    attr_accessor :company_name, :project_name, :controller_class_to_inherit, :default_javascripts, :default_stylesheets, :logo_url
 
     def initialize
       @company_name = 'Your awesome company'
