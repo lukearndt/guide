@@ -33,6 +33,11 @@ class Guide::NodeView
     cell.present?
   end
 
+  def show_locale_switcher?
+    #TODO: Add Diplomat
+    false
+  end
+
   def template_location
     template || cell || partial
   end
