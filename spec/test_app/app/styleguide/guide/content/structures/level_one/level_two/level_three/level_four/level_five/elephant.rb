@@ -15,7 +15,7 @@ class Guide::Content::Structures::LevelOne::LevelTwo::LevelThree::LevelFour::Lev
   end
 
   def javascripts
-    ['application/core.css', 'application/default.css']
+    ['application/core.js', 'application/default.js']
   end
 
   def view_model

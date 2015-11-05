@@ -33,7 +33,7 @@ class Guide::Content::Structures::PurchaseFlow::Email::OrderConfirmation < Guide
   end
 
   def javascripts
-    ['application/core.css', 'application/default.css']
+    ['application/core.js', 'application/default.js']
   end
 
   def view_model
