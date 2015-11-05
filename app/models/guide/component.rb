@@ -43,7 +43,7 @@ class Guide::Component < Guide::Node
   end
 
   def layout_template
-    'layouts/guide_scenario/default'
+    'layouts/guide/scenario/default'
   end
 
   def layout_view_model

@@ -8,6 +8,9 @@
       <%= @layout_view.node_title %> ~ <%= @layout_view.scenario_name %> ~ Guide
     </title>
 
+    <%# TEMP: Hotlink to Envato Market prod assets %>
+    <%= javascript_include_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/scenario-f226d62a1b6d6984169a8833594b1dd7.js") %>
+
     <% # Application specific stylesheets to render template %>
     <% @layout_view.node_stylesheets.each do |styleheet|%>
       <%= stylesheet_link_tag(styleheet, :media => "all") %>
