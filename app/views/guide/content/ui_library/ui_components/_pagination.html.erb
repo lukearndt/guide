@@ -1,0 +1,51 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">
+      For dividing related content over several pages.
+    </p>
+  </div>
+
+  <section class="sg-content__group">
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <nav class="js-pagination pagination">
+          <ul class="pagination__list">
+            <li><span class="pagination__previous--disabled js-pagination-previous"><b>Prev</b></span></li>
+            <li><span class="pagination__summary">Page 1 of 26</span></li>
+            <li><span class="pagination__page--current">1</span></li>
+            <li><a rel="next" class="pagination__page" href="#">2</a></li>
+            <li><a class="pagination__page" href="#">3</a></li>
+            <li><a class="pagination__page" href="#">4</a></li>
+            <li><a class="pagination__page" href="#">5</a></li>
+            <li><span class="pagination__gap">&hellip;</span></li>
+            <li><a class="pagination__page" href="#">26</a></li>
+            <li><a class="pagination__next js-pagination-next" rel="next" href="#"><b>Next</b></a></li>
+          </ul>
+        </nav>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <nav class="js-pagination pagination">
+          <ul class="pagination__list">
+            <li><a class="pagination__previous js-pagination-previous " rel="prev start" href="#"><b>Prev</b></a>
+            </li>
+            <li><span class="pagination__summary">Page 2 of 26</span></li>
+            <li><a rel="prev start" class="pagination__page" href="#">1</a></li>
+            <li><span class="pagination__page--current">2</span></li>
+            <li><a rel="next" class="pagination__page" href="#">3</a></li>
+            <li><a class="pagination__page" href="#">4</a></li>
+            <li><a class="pagination__page" href="#">5</a></li>
+            <li><span class="pagination__gap">&hellip;</span></li>
+            <li><a class="pagination__page" href="#">26</a></li>
+            <li><a class="pagination__next js-pagination-next" rel="next" href="#"><b>Next</b></a></li>
+          </ul>
+        </nav>
+      <% end %>
+    </div>
+  </section>
+
+</div>

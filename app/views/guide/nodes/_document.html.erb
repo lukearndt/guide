@@ -1,3 +1,14 @@
+<%=
+  # TODO: This is temporary so we can use the
+  #       Market styles to render UI library elements.
+  #       And yes declaring styles outside of the `head` works :)
+  #       Next step is to render the code examples in an iframe.
+  #       And then we won't need any Market styles for the Styleguide!
+  #       Jordan - 04 Nov 2015 (HACKFORT FTW)
+
+  stylesheet_link_tag("market/core/index", :media => "all")
+%>
+
 <div class="sg-prism">
   <%= render view.partial %>
 </div>

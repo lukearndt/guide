@@ -14,13 +14,17 @@
     <% end %>
   </head>
 
-  <body>
+  <body class="e-guide">
     <% if @layout_view.format == 'html' %>
       <%= render  @layout_view.node_layout_template,
                   :presenter => @layout_view.node_layout_presenter %>
     <% else %>
       <%= render  "#{@layout_view.node_layout_template}.#{@layout_view.format}",
                   :presenter => @layout_view.node_layout_presenter %>
+    <% end %>
+
+    <% @layout_view.node_javascripts.each do |javascript|%>
+      <%#= javascript_include_tag(javascript) %>
     <% end %>
   </body>
 </html>

@@ -1,0 +1,183 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">
+      Alert boxes are used for displaying temporary information to users.
+      <br />This could be in the form of a Flash message or UI notice, error or success
+    </p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Presets</h2>
+    <p class="t-body">We have 3 prefined alert-box types: <strong>notification</strong>, <strong>success</strong> and <strong>alert</strong>.</p>
+    <p class="t-body"><code class="sg-code">alert-box</code> only provides the styles for the alert container. All typography and inner content is styled using typography classes.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Notice (default) -->
+        <div class="alert-box">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-flag"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          </div>
+        </div>
+
+        <!-- Success -->
+        <div class="alert-box -type-success">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-ok"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          </div>
+        </div>
+
+        <!-- Alert -->
+        <div class="alert-box -type-alert">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-alert"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">Sorry something whent wrong. <%= link_to "Please contact Support", "#" %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Elements</h2>
+    <p class="t-body">Alert-boxes are customisable and it's possible to pick and choose the elements required.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- With icon -->
+        <div class="alert-box">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-flag"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          </div>
+        </div>
+
+        <!-- No icon -->
+        <div class="alert-box">
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          </div>
+        </div>
+
+        <!-- With dismiss button -->
+        <div class="alert-box">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-flag"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          </div>
+          <div  class="alert-box__dismiss">
+            <a href="#" class="alert-box__dismiss-icon">
+              <i class="e-icon -icon-cancel"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Multi-line alert-box -->
+        <div class="alert-box">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-flag"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+            <ul class="t-list -style-decimal">
+              <li class="t-body -size-m h-remove-margin">Wow</li>
+              <li class="t-body -size-m h-remove-margin">Such alert</li>
+              <li class="t-body -size-m h-remove-margin">Very notice</li>
+              <li class="t-body -size-m h-remove-margin">So informed</li>
+              <li class="t-body -size-m h-remove-margin">Much impressed</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Multi-line text heavy alert-box -->
+        <div class="alert-box">
+          <div class="alert-box__icon">
+            <i class="e-icon -icon-flag"></i>
+          </div>
+          <div class="alert-box__message">
+            <p class="t-body -size-m h-remove-margin">
+              Envato’s ecosystem of sites includes a digital marketplace, an educational platform and a freelance network. These services help millions of people around the world get creative, earn an income online, and learn new skills. You can get lost exploring our ecosystem, it’s huge! But flick through the different parts below and you’ll quickly get oriented. Welcome to our community
+            </p>
+          </div>
+          <div  class="alert-box__dismiss">
+            <a href="#" class="alert-box__dismiss-icon">
+              <i class="e-icon -icon-cancel"></i>
+            </a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">No Flexbox Support (<= IE9)</h2>
+    <p class="t-body">Alert boxes are built with flexbox, here's how they look for browsers which don't support it.</p>
+
+    <div class="sg-content__example no-flexbox">
+      <!-- With icon -->
+      <div class="alert-box">
+        <div class="alert-box__icon">
+          <i class="e-icon -icon-flag"></i>
+        </div>
+        <div class="alert-box__message">
+          <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+        </div>
+      </div>
+
+      <!-- No icon -->
+      <div class="alert-box">
+        <div class="alert-box__message">
+          <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+        </div>
+      </div>
+
+      <!-- With dismiss button -->
+      <div class="alert-box">
+        <div class="alert-box__icon">
+          <i class="e-icon -icon-flag"></i>
+        </div>
+        <div class="alert-box__message">
+          <p class="t-body -size-m h-remove-margin">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+        </div>
+        <div  class="alert-box__dismiss">
+          <a href="#" class="alert-box__dismiss-icon">
+            <i class="e-icon -icon-cancel"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Multi-line alert-box -->
+      <div class="alert-box">
+        <div class="alert-box__icon">
+          <i class="e-icon -icon-flag"></i>
+        </div>
+        <div class="alert-box__message">
+          <p class="t-body -size-m">You have added this item to your cart. <%= link_to "Go to checkout", "#" %></p>
+          <ul class="t-list -style-decimal">
+            <li class="t-body -size-m h-remove-margin">Wow</li>
+            <li class="t-body -size-m h-remove-margin">Such alert</li>
+            <li class="t-body -size-m h-remove-margin">Very notice</li>
+            <li class="t-body -size-m h-remove-margin">So informed</li>
+            <li class="t-body -size-m h-remove-margin">Much impressed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

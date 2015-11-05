@@ -13,18 +13,22 @@
     <meta name="description" content="<% if @layout_view.on_homepage? %>A living, breathing, evolving styleguide.<% end %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= stylesheet_link_tag("guide/application", :media => "all") %>
+    <%#= stylesheet_link_tag("guide/application", :media => "all") %>
+
+    <%# TEMP: Hotlink to Envato Market prod assets %>
+    <%= stylesheet_link_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/index-180257d94c3a96c2881d3d73e0221f10.css", :media => "all") %>
+
 
     <!-- Material Design icon font -->
     <%= stylesheet_link_tag("https://fonts.googleapis.com/icon?family=Material+Icons", :media => "all") %>
   </head>
 
   <body>
-    <div data-view="sgSidebarNav" class="sg-layout">
+    <div data-view="layout" class="sg-layout">
       <aside class="js-layout__sidebar sg-layout__sidebar">
         <div class="sg-drawer">
           <div class="sg-drawer__logo">
-            <%= link_to image_tag("styleguide/envato-market-styleguide--light-v3.svg", :alt => "Envato Market Styleguide"), root_path, :class => "sg-header__logo" %>
+            <%= link_to image_tag("guide/envato-market-styleguide--light-v3.svg", :alt => "Envato Market Styleguide"), root_path, :class => "sg-header__logo" %>
           </div>
           <div class="sg-drawer__nav">
             <%= yield :sidebar %>
@@ -48,15 +52,20 @@
             </div>
           </div>
 
-          <%#= render 'guide/common/visibility_banner', :view => @layout_view %>
+          <%= render 'guide/common/visibility_banner', :view => @layout_view %>
         </header>
 
         <div class="sg-layout__content">
           <%= yield %>
-          <%#= render 'guide/common/footer', :view => @layout_view %>
+          <%= render 'guide/common/footer', :view => @layout_view %>
         </div>
         <div class="js-layout__nav-overlay sg-layout__overlay"></div>
       </main>
     </div>
+
+    <%# TEMP: Hotlink to Envato Market prod assets %>
+    <%= stylesheet_link_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/index-180257d94c3a96c2881d3d73e0221f10.css", :media => "all") %>
+    <%= javascript_include_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/application-6bf31d02d9fa60093d0478e4c98edd0b.js") %>
+    <script>$(function(){viewloader.execute(Views);});</script>
   </body>
 </html>

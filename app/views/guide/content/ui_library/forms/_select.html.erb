@@ -1,0 +1,149 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">All form inputs should have a class applied as there are no global input styles.</p>
+    <div class="alert-box">
+      <div class="alert-box__icon">
+        <i class="e-icon -icon-flag"></i>
+      </div>
+      <div class="alert-box__message">
+        <p class="t-body -size-m h-remove-margin">
+          These are our base Selects. We have <%= link_to "custom selects", admin_styleguide_atom_path(:selects) %> also which also need bringing across.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="sg-content__group">
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example" data-heading="Regular">
+          <!-- Select -->
+          <select class="f-select">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Disabled">
+          <!-- Disabled -->
+          <select class="f-select" disabled>
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Grouped options">
+          <!-- Select -->
+          <select class="f-select">
+            <optgroup label="Countries">
+              <option value="Australia">Australia</option>
+              <option value="USA">USA</option>
+              <option value="France">France</option>
+              <option value="Canada">Canada</option>
+            </optgroup>
+            <optgroup label="Cities">
+              <option value="Melbourne">Melbourne</option>
+              <option value="New York">New York</option>
+              <option value="Paris">Paris</option>
+              <option value="Toronto">Toronto</option>
+            </optgroup>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Validation States">
+          <!-- Select with validation states -->
+          <select class="f-select is-invalid">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+          <select class="f-select is-valid">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+          <select class="f-select is-error">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+          <select class="f-select is-pending">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Full Width">
+          <!-- Select Full Width -->
+          <select class="f-select -width-full">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Select (Large)">
+          <!-- Select (large)-->
+          <select class="f-select -size-l">
+            <option value="">Choose a Market</option>
+            <option value="tf">ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd">PhotoDune</option>
+          </select>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Multi select</h2>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example" data-heading="Multi-Select">
+          <!-- Multi-Select -->
+          <select class="f-select -type-multi" multiple>
+            <option value="">Choose a Market</option>
+            <option value="tf" selected>ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd" selected>PhotoDune</option>
+            <option value="cc">CodeCanyon</option>
+            <option value="ad">ActiveDen</option>
+          </select>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Multi-Select (Disabled) ">
+          <!-- Multi-Select (Disabled) -->
+          <select class="f-select -type-multi" multiple disabled>
+            <option value="">Choose a Market</option>
+            <option value="tf" selected>ThemeForest</option>
+            <option value="gr">GraphicRiver</option>
+            <option value="vh">VideoHive</option>
+            <option value="pd" selected>PhotoDune</option>
+            <option value="cc">CodeCanyon</option>
+            <option value="ad">ActiveDen</option>
+          </select>
+        </span>
+      <% end %>
+    </div>
+  </section>
+</div>

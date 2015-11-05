@@ -1,0 +1,337 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body">Modal classes just the style the layout, the typography and inner modules are all separate styles.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Defaults</h2>
+    <p class="t-body">All modals are made up of a header, body and footer</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal" data-view="modalInternalControls">
+          <header class="e-modal__header">
+            Header
+          </header>
+          <div class="e-modal__section">
+            Section
+          </div>
+          <footer class="e-modal__footer">
+            Footer
+          </footer>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button> <!-- Added automatically by plugin -->
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Background Color</h2>
+    <p class="t-body">Modal sections have some preset colors</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal">
+          <div class="e-modal__section">
+            Light (default)
+          </div>
+          <div class="e-modal__section -background-mid">
+            Mid
+          </div>
+          <div class="e-modal__section -background-dark">
+            Dark
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Border Radius</h2>
+    <p class="t-body">Modals can have rounded edges defined for each section</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal">
+          <div class="e-modal__section -radius-none">
+            None (default for .e-modal__section)
+          </div>
+        </div>
+        <div class="e-modal">
+          <div class="e-modal__section -radius-top">
+            Top (default for .e-modal__header)
+          </div>
+        </div>
+        <div class="e-modal">
+          <div class="e-modal__section -radius-bottom">
+            Bottom (default for .e-modal__footer)
+          </div>
+        </div>
+        <div class="e-modal">
+          <div class="e-modal__section -radius-all">
+            All
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Width</h2>
+    <p class="t-body">Modals have a range of widths depending on the content you want to show.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal -width-xs">
+          <div class="e-modal__section">
+            X-small
+          </div>
+        </div>
+        <div class="e-modal -width-s">
+          <div class="e-modal__section">
+            Small
+          </div>
+        </div>
+        <div class="e-modal">
+          <div class="e-modal__section">
+            Medium (default)
+          </div>
+        </div>
+        <div class="e-modal -width-l">
+          <div class="e-modal__section">
+            Large
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Height</h2>
+    <p class="t-body">Modals have a range of heights depending on the content you want to show.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal">
+          <div class="e-modal__section">
+            Default
+          </div>
+        </div>
+
+        <div class="e-modal">
+          <div class="e-modal__section -height-scroll">
+            Scroll<br><br><br>
+            this<br>
+            is<br>
+            a<br>
+            very<br>
+            tall<br>
+            modal<br>
+            that<br>
+            responds<br>
+            to<br>
+            verical<br>
+            breakpoints<br>
+            and<br>
+            is<br>
+            useful<br>
+            for<br>
+            modals<br>
+            with<br>
+            potentially<br>
+            lots<br>
+            of<br>
+            content
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Padding</h2>
+    <p class="t-body">Padding can be applied to the modal sections for extra layout control</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal" data-view="modalInternalControls">
+          <div class="e-modal__section">
+            Small (default)
+          </div>
+          <div class="e-modal__section -padding-m">
+            Medium
+          </div>
+          <div class="e-modal__section -padding-l">
+            large
+          </div>
+          <div class="e-modal__section -padding-none">
+            None
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Footer</h2>
+    <p class="t-body">Footers may have multiple types of CTA (Call To Action) buttons that may need different alignments.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Worst case scenario -->
+        <div class="e-modal" data-view="modalInternalControls">
+          <footer class="e-modal__footer">
+             <div class="e-modal__footer-cta -align-left">
+              <a href="/checkout/-1" class="js-modal-close e-btn -color-muted">Back</a>
+            </div>
+            <div class="e-modal__footer-cta -align-center">
+              <span class="t-body -size-m">
+                <a href="/collections/manage">
+                  <i class="e-icon -icon-cog -margin-right"></i>Manage my Collections
+                </a>
+              </span>
+            </div>
+            <div class="e-modal__footer-cta -align-right">
+              <a href="#" class="btn btn--primary js-modal-close">Great, I'm done</a>
+            </div>
+          </footer>
+        </div>
+
+        <!-- Added to cart -->
+        <div class="e-modal" data-view="modalInternalControls">
+          <footer class="e-modal__footer">
+            <div class="e-modal__footer-cta -align-left">
+              <a href="#" class="js-modal-close e-btn -color-light">Keep Browsing</a>
+            </div>
+            <div class="e-modal__footer-cta -align-right">
+              <a href="/cart" class="e-btn--3d -color-primary">Go to Checkout</a>
+            </div>
+          </footer>
+        </div>
+
+        <!-- Add to collection -->
+        <div class="e-modal" data-view="modalInternalControls">
+          <footer class="e-modal__footer">
+            <div class="e-modal__footer-cta -align-left">
+              <span class="t-body -size-m">
+                <a href="/collections/manage">
+                  <i class="e-icon -icon-cog -margin-right"></i>Manage my Collections
+                </a>
+              </span>
+            </div>
+            <div class="e-modal__footer-cta -align-right">
+              <a href="#" class="btn btn--primary js-modal-close">Great, I'm done</a>
+            </div>
+          </footer>
+        </div>
+
+        <!-- Deposit and buy -->
+        <div class="e-modal" data-view="modalInternalControls">
+          <footer class="e-modal__footer">
+            <div class="e-modal__footer-cta -align-left">
+              <a href="/checkout/-1" class="js-modal-close e-btn -color-muted">Back</a>
+            </div>
+          </footer>
+        </div>
+
+        <!-- Email contact -->
+        <div class="e-modal" data-view="modalInternalControls">
+          <footer class="e-modal__footer">
+            <div class="e-modal__footer-cta -align-right">
+              <input class="button btn btn--primary" name="commit" type="submit" value="Send">
+            </div>
+          </footer>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h3 class="t-heading -size-s">No Flexbox</h3>
+    <div class="sg-content__example no-flexbox">
+      <!-- Worst case scenario -->
+      <div class="e-modal" data-view="modalInternalControls">
+        <footer class="e-modal__footer">
+           <div class="e-modal__footer-cta -align-left">
+            <a href="/checkout/-1" class="js-modal-close e-btn -color-muted">Back</a>
+          </div>
+          <div class="e-modal__footer-cta -align-center">
+            <span class="t-body -size-m">
+              <a href="/collections/manage">
+                <i class="e-icon -icon-cog -margin-right"></i>Manage my Collections
+              </a>
+            </span>
+          </div>
+          <div class="e-modal__footer-cta -align-right">
+            <a href="#" class="btn btn--primary js-modal-close">Great, I'm done</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Added to cart -->
+      <div class="e-modal" data-view="modalInternalControls">
+        <footer class="e-modal__footer">
+          <div class="e-modal__footer-cta -align-left">
+            <a href="#" class="js-modal-close e-btn -color-light">Keep Browsing</a>
+          </div>
+          <div class="e-modal__footer-cta -align-right">
+            <a href="/cart" class="e-btn--3d -color-primary">Go to Checkout</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Add to collection -->
+      <div class="e-modal" data-view="modalInternalControls">
+        <footer class="e-modal__footer">
+          <div class="e-modal__footer-cta -align-left">
+            <span class="t-body -size-m">
+              <a href="/collections/manage">
+                <i class="e-icon -icon-cog -margin-right"></i>Manage my Collections
+              </a>
+            </span>
+          </div>
+          <div class="e-modal__footer-cta -align-right">
+            <a href="#" class="btn btn--primary js-modal-close">Great, I'm done</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Deposit and buy -->
+      <div class="e-modal" data-view="modalInternalControls">
+        <footer class="e-modal__footer">
+          <div class="e-modal__footer-cta -align-left">
+            <a href="/checkout/-1" class="js-modal-close e-btn -color-muted">Back</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Email contact -->
+      <div class="e-modal" data-view="modalInternalControls">
+        <footer class="e-modal__footer">
+          <div class="e-modal__footer-cta -align-right">
+            <input class="button btn btn--primary" name="commit" type="submit" value="Send">
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tracking" class="sg-content__group">
+    <h2 class="t-heading -size-m">Google Analytics 'Page View' Tracking</h2>
+    <p class="t-body">When a modal is opened with JavaScript, a pageview event is sent to Google Analytics to track modal usage. This will not happen when a modal is opened in a full page.</p>
+    <p class="t-body">To track a modal as a pageview, append <code class="sg-code">data-google-analytics-page-title="..."</code> to the <code class="sg-code">.e-modal</code> element</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-modal" data-view="modalInternalControls" data-google-analytics-page-title="page_title_for_google-analytics_goes_here"></div>
+      <% end %>
+    </div>
+
+    <br>
+    <br>
+
+    <h2 class="t-heading -size-s">Ignore pageview tracking for a modal</h2>
+    <p class="t-body">In cases where it does not make sense to track the opening of a modal as a pageview (e.g an auto popup notification or a developer only tool), just do not include the <code class="sg-code">data-google-analytics-page-title</code> attribute.</p>
+  </section>
+</div>

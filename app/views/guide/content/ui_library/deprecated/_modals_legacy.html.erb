@@ -1,0 +1,267 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body">Modal classes just the style the layout, the typography and inner modules are all separate styles.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Defaults</h2>
+    <p class="t-body">All modals are made up of a header, body and footer</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="modal" data-view="modalInternalControls">
+          <header class="modal__header">
+            Header
+          </header>
+          <div class="modal__body">
+            Body
+          </div>
+          <div class="modal__body -background-mid">
+            Body (grey)
+          </div>
+          <footer class="modal__footer">
+            Footer
+          </footer>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button> <!-- Added automatically by plugin -->
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Widths</h2>
+    <p class="t-body">Not all modals are created equal. Depending on the task a narrow or wide modal may be required.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Narrow width modal -->
+          <div class="modal -width-narrow">
+            <header class="modal__header">
+              Narrow Width
+            </header>
+            <div class="modal__body">
+              Body
+            </div>
+            <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Default width modal -->
+          <div class="modal">
+            <header class="modal__header">
+              Default Width
+            </header>
+            <div class="modal__body">
+              Body
+            </div>
+            <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Wide width modal -->
+          <div class="modal -width-wide">
+            <header class="modal__header">
+              Wide
+            </header>
+            <div class="modal__body">
+              Body
+            </div>
+            <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Padding</h2>
+    <p class="t-body">Padding can be applied to the modal bodies for extra layout control</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Default body padding -->
+          <div class="modal">
+            <header class="modal__header">
+              header
+            </header>
+            <div class="modal__body">
+              Body - default padding
+            </div>
+             <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Medium body padding -->
+          <div class="modal">
+            <header class="modal__header">
+              Header
+            </header>
+            <div class="modal__body -padding-m">
+              Body - medium padding
+            </div>
+             <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- No body padding -->
+          <div class="modal">
+            <header class="modal__header">
+              Header
+            </header>
+            <div class="modal__body -padding-none">
+              Body - no padding
+            </div>
+             <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Heights</h2>
+    <p class="t-body">It is possible to set the height of a modal contents so that scrollbars appear if the content is super long.</p>
+    <p class="t-body">This is very useful when a modal is displayed as intended in an overlay, but when using modal on a fullpage (i.e. progressively enhanced) it's probably best to remove this class to allow the page scrollbars to manage the scrolling</p>
+
+    <div class="alert-notification">
+      <p class="t-body -size-m"><code class="sg-code">.-height-scroll</code> uses media queries to change the height of the modal depending on the browser's dimensions. (Try resizing your browser to see)</p>
+    </div>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Height Scroll -->
+          <div class="modal">
+            <header class="modal__header">
+              <h2 class="t-heading -size-m">With scrollbars</h2>
+            </header>
+            <div class="modal__body -height-scroll">
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+                <li>item 7</li>
+                <li>item 8</li>
+                <li>item 9</li>
+                <li>item 10</li>
+                <li>item 11</li>
+                <li>item 12</li>
+                <li>item 13</li>
+                <li>item 14</li>
+                <li>item 15</li>
+                <li>item 16</li>
+                <li>item 17</li>
+                <li>item 18</li>
+                <li>item 19</li>
+                <li>item 20</li>
+              </ul>
+            </div>
+             <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Default (no scrollbars) -->
+          <div class="modal">
+            <header class="modal__header">
+              <h2 class="t-heading -size-m">No scrollbars (default)</h2>
+            </header>
+            <div class="modal__body">
+              <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+                <li>item 7</li>
+                <li>item 8</li>
+                <li>item 9</li>
+                <li>item 10</li>
+                <li>item 11</li>
+                <li>item 12</li>
+                <li>item 13</li>
+                <li>item 14</li>
+                <li>item 15</li>
+                <li>item 16</li>
+                <li>item 17</li>
+                <li>item 18</li>
+                <li>item 19</li>
+                <li>item 20</li>
+              </ul>
+            </div>
+             <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <section id="headings" class="sg-content__group">
+    <h2 class="t-heading -size-m">Headings</h2>
+    <p class="t-body">Modals headings come in two different types (whitelabel and branded)</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Whitelable heading -->
+          <div class="modal">
+            <header class="modal__header -theme-market">
+              header
+            </header>
+            <div class="modal__body">
+              Body
+            </div>
+            <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Branded heading -->
+          <div class="modal">
+            <header class="modal__header">
+              Envato Market
+            </header>
+            <div class="modal__body">
+              Body
+            </div>
+            <footer class="modal__footer">
+              Footer
+            </footer>
+          </div>
+        </span>
+
+      <% end %>
+    </div>
+  </section>
+</div>

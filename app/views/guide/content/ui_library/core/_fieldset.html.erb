@@ -1,0 +1,159 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Fieldsets are used to give structure to forms and data.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Kitchen-sink</h2>
+    <p class="t-body">Fieldsets are very flexible and most elements are optional and interchangable.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__prefix"><span>1</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Billing Details</h3>
+            </div>
+            <span class="e-fieldset__action">
+              <%= link_to "Change", "#", :class => "btn btn--color-light" %>
+            </span>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+          <div class="e-fieldset__body -divider-top">
+            <p class="t-body h-remove-margin">Body with divider</p>
+          </div>
+          <footer class="e-fieldset__footer">
+            <%= link_to "Save and continue", "#", :class => "btn btn--color-green-3d" %>
+          </footer>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Examples</h2>
+    <p class="t-body">Possible combinations</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Read-only Mode -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__prefix"><span>1</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+            <span class="e-fieldset__action">
+              <%= link_to "Change", "#", :class => "btn btn--color-light" %>
+            </span>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+        </div>
+
+        <!-- Edit Mode -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__prefix"><span>2</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 2</h3>
+            </div>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+          <footer class="e-fieldset__footer">
+            <%= link_to "Save and continue", "#", :class => "btn btn--color-green-3d" %>
+          </footer>
+        </div>
+
+        <!-- Disabled Mode -->
+        <div class="e-fieldset is-disabled">
+          <header class="e-fieldset__header">
+            <div class="e-fieldset__prefix"><span>3</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 3</h3>
+            </div>
+          </header>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Header Variations</h2>
+    <p class="t-body">Each element in the header is optional e.g. prefix, button, divider etc</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Basic -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header">
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+        </div>
+
+        <!-- With divider -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+        </div>
+
+        <!-- With prefix -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__prefix"><span>1</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+        </div>
+
+        <!-- With action button -->
+        <div class="e-fieldset">
+          <header class="e-fieldset__header -divider-bottom">
+            <div class="e-fieldset__prefix"><span>1</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+            <span class="e-fieldset__action">
+              <%= link_to "Change", "#", :class => "btn btn--color-light" %>
+            </span>
+          </header>
+          <div class="e-fieldset__body">
+            <p class="t-body h-remove-margin">Body</p>
+          </div>
+        </div>
+
+        <!-- Disabled Mode -->
+        <div class="e-fieldset is-disabled">
+          <header class="e-fieldset__header">
+            <div class="e-fieldset__prefix"><span>1</span></div>
+            <div class="e-fieldset__title">
+              <h3 class="t-heading -size-s h-remove-margin">Step 1</h3>
+            </div>
+          </header>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

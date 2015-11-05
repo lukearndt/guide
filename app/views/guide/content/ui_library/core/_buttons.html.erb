@@ -1,0 +1,173 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Use buttons for actions (purchase, save, delete, confirm), not purely for linking purposes — we have links for that! Buttons hierarchy shows the hierarchy of actions that users can perform on a page.</p>
+    <p class="t-body">Think about the importance of every action: you’ll soon find that some are more important than others. When deciding on button sizes, be mindful of touch target size.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 id="color" class="t-heading -size-m">Colors</h2>
+    <p class="t-body">When using this Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <a class="e-btn">default</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-primary">primary</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-secondary">secondary</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-warning">warning</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-destructive">destructive</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-dark">dark</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-muted">muted</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-light">light</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn -color-transparent">transparent</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 id="3d" class="t-heading -size-m">3D</h2>
+    <p class="t-body">When using this Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d">default</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d -color-primary">primary</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d -color-secondary">secondary</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d -color-warning">warning</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d -color-destructive">destructive</a>
+        </span>
+        <span class="sg-code--inline example">
+          <a class="e-btn--3d -color-light">light</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 id="size" class="t-heading -size-m">Sizes</h2>
+    <p class="t-body">When using this Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Extra Small -->
+          <span class="e-btn -size-xs">x-small</span>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Small (default) -->
+          <span class="e-btn">small (default)</span>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Medium -->
+          <span class="e-btn -size-m">medium</span>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Large -->
+          <span class="e-btn -size-l">large</span>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Extra Large -->
+          <span class="e-btn -size-xl">x-large</span>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 id="width" class="t-heading -size-m">Width</h2>
+    <p class="t-body">When using this Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Regular -->
+          <span class="e-btn">regular</span>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Full-width -->
+          <span class="e-btn -width-full">full width</span>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 id="disabled" class="t-heading -size-m">Disabled</h2>
+    <p class="t-body">Buttons can be disabled in a number of ways, lets make sure they look good!</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <a class="e-btn is-disabled">link - class</a>
+          <a class="e-btn" data-state="disabled">link - data attribute</a>
+          <a class="e-btn" disabled>link - disabled attribute</a>
+        </span>
+
+        <span class="sg-code--block example">
+          <button class="e-btn is-disabled">button - class</button>
+          <button class="e-btn" data-state="disabled">button - data attribute</button>
+          <button class="e-btn" disabled>button - disabled attribute</button>
+        </span>
+
+        <span class="sg-code--block example">
+          <input type="submit" class="e-btn is-disabled" value="input - class">
+          <input type="submit" class="e-btn" data-state="disabled" value="input - data attribute">
+          <input type="submit" class="e-btn" disabled value="input - disabled attribute">
+        </span>
+
+        <span class="sg-code--block example">
+          <a class="e-btn--3d is-disabled">link - class</a>
+          <a class="e-btn--3d" data-state="disabled">link - data attribute</a>
+          <a class="e-btn--3d" disabled>link - disabled attribute</a>
+        </span>
+
+        <span class="sg-code--block example">
+          <button class="e-btn--3d is-disabled">button - class</button>
+          <button class="e-btn--3d" data-state="disabled">button - data attribute</button>
+          <button class="e-btn--3d" disabled>button - disabled attribute</button>
+        </span>
+
+        <span class="sg-code--block example">
+          <input type="submit" class="e-btn--3d is-disabled" value="input - class">
+          <input type="submit" class="e-btn--3d" data-state="disabled" value="input - data attribute">
+          <input type="submit" class="e-btn--3d" disabled value="input - disabled attribute">
+        </span>
+      <% end %>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,51 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Banners are commonly used for linking to limited time promotional content, e.g. bundles, licensing etc. The entire banner (within the grid container) is a link.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Large promotional banner—default style</h2>
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class='banner__background -promo'>
+          <div class="grid-container">
+            <div class='banner__contents'>
+              <a href='http://envato.com/' target='_blank' rel='nofollow' class='js-banner__link banner__link'>
+                <span class='banner__text t-body h-remove-margin'>
+                  <strong>Styleguide Banner Example!</strong>
+                  Synergising the Cloud since the early days of the Information Superhighway™
+                </span>
+              </a>
+              <a href='#' class='js-banner__dismiss banner__dismiss'>
+                <i class="e-icon -icon-cancel" title="Dismiss banner"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Announcement banner</h2>
+    <p class="t-body">Sitewide announcement banners are similar to the ones above, but text-only. These banners only contain links within their text content and can be added through the admin panel.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class='banner__background'>
+          <div class="grid-container">
+            <div class='banner__contents'>
+              <span class='banner__text t-body h-remove-margin'>
+                <strong>Important:</strong>
+                This is an announcement that is important because of reasons. <a href="http://omfgdogs.ytmnd.com/" class='js-banner__link banner__link'>Link!</a>
+              </span>
+              <a href='#' class='js-banner__dismiss banner__dismiss'>
+                <i class="e-icon -icon-cancel" title="Dismiss banner"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

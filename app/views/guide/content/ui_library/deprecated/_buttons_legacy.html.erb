@@ -1,0 +1,324 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Use buttons for actions (purchase, save, delete, confirm), not purely for linking purposes — we have links for that! Buttons hierarchy shows the hierarchy of actions that users can perform on a page.</p>
+    <p class="t-body">Think about the importance of every action: you’ll soon find that some are more important than others. When deciding on button sizes, be mindful of touch target size.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Primary</h2>
+    <p class="t-body">Use primary button for the no.1 most important action on the page. We encourage having only <strong>one</strong> primary button on a page (“one job for one page” design). You can have subtext in the primary button to describe more about what the action is about.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Small Primary Button -->
+          <a class="btn btn--primary">Primary button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Button with subtext -->
+          <a class="btn btn--primary-large-full">
+            Button with subtext <small class="btn__tagline">I'm a small tag yo</small>
+          </a>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Large Primary Full Width Button -->
+          <a class="btn btn--primary-large-full">Large primary full width button</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Secondary</h2>
+    <p class="t-body">Use secondary button when different actions that have equal weight in hierarchy, or when the action is a supportive action rather than a call-to-action.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <a class="btn btn--secondary">Secondary button</a>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Tertiary</h2>
+    <p class="t-body">The use of tertiary buttons should be similar to the secondary — a good mix between the two. There’s usually a blurred line between a tertiary button and a link, so try and answer the question: Is it an action or does it just send the user to another page?</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <a class="btn btn--tertiary">Tertiary button</a>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Default</h2>
+    <p class="t-body">Buttons will be styled like this even without the <code class="sg-code">btn</code> class, but we'd like to remove the default styles &amp; scope them to a class eventually.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <a class="btn">Default button</a>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Disabled Button</h2>
+    <p class="t-body">When using this Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="sg-content__example">
+      <p class="t-body">There are 3 ways to make a button look disabled:</p>
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Disabled attribute -->
+          <button class="btn" disabled>Disabled</button>
+        </span>
+        <span class="sg-code--inline example">
+          <!-- Data attribute -->
+          <button class="btn" data-state="disabled">Disabled</button>
+        </span>
+        <span class="sg-code--inline example">
+          <!-- Class -->
+          <button class="btn btn--is-disabled">Disabled</button>
+        </span>
+      <% end %>
+      <div class="alert-notification">
+        <p class="t-body -size-m h-remove-margin"><strong>Note:</strong> Only the first option actually disables the button.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">3D Button</h2>
+    <p class="t-body">Use 3D button for important actions, it has a heavier visual weight to it.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Default 3D Button -->
+          <a class="btn btn--color-base-3d">Default 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Green 3D Button -->
+          <a class="btn btn--color-green-3d">Green 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Blue 3D Button -->
+          <a class="btn btn--color-blue-3d">Blue 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Red 3D Button -->
+          <a class="btn btn--color-red-3d">Red 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Orange 3D Button -->
+          <a class="btn btn--color-orange-3d">Orange 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Light 3D Button -->
+          <a class="btn btn--color-light-3d">Light 3D button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Disabled 3D Button -->
+          <a class="btn btn--color-base-3d" disabled>Disabled 3D button</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Button Colors</h2>
+    <p class="t-body">Different button colors can be used to convey the type of action</p>
+
+    <h4 class="t-heading -size-xs h-remove-margin">Green</h4>
+    <p class="t-body">In Envato Market, green buttons are generally the primary action on the page and have the most weight to it.</p>
+
+    <h4 class="t-heading -size-xs h-remove-margin">Blue (default)</h4>
+    <p class="t-body">Blue and default colors can be used for more neutral actions.</p>
+
+    <h4 class="t-heading -size-xs h-remove-margin">Red</h4>
+    <p class="t-body">Red color button can be used to provide warning to the action (delete, remove).</p>
+
+    <h4 class="t-heading -size-xs h-remove-margin">Dark</h4>
+    <p class="t-body">Use Dark button sparingly - it’s designed for actions that should appear as muted within .box--topbar.</p>
+
+    <div class="sg-content__example">
+
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Default Button -->
+          <a class="btn">Default button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Green Button -->
+          <a class="btn btn--color-green">Green button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Blue Button -->
+          <a class="btn btn--color-blue">Blue button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Red Button -->
+          <a class="btn btn--color-red">Red button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Orange Button -->
+          <a class="btn btn--color-orange">Orange button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Muted Button -->
+          <a class="btn btn--color-muted">Muted button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Light Button -->
+          <a class="btn btn--color-light">Light button</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Dark Button -->
+          <a class="btn btn--color-dark">Dark button</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Button Sizes</h2>
+    <p class="t-body">Use consistent button sizes at all times, if they co-exist on the same page they should be the same size.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Large Button -->
+          <a class="btn btn--size-l">Large</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Slime Large Button -->
+          <a class="btn btn--size-l-slim">Slim large</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Inline Medium Button -->
+          <a class="btn btn--size-m-inline">Inline medium</a>
+        </span>
+
+        <span class="sg-code--inline example">
+          <!-- Extra Large Button -->
+          <a class="btn btn--size-xl">Extra large</a>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Full Width Button -->
+          <a class="btn btn--dimensions-full-width">Full width</a>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Stack Button</h2>
+    <p class="t-body"><code>btn-stack</code> is a special module you should use inside elements with the btn class. You can use them to build big, fancy call-to-action buttons with icons &amp; helper text.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Stack Button -->
+        <a href="#" class="btn btn--size-l btn--color-green-3d">
+          <div class="btn-stack">
+            <div class="btn-stack__icon">
+              <i class="e-icon -icon-document"></i>
+            </div>
+            <div class="btn-stack__content">
+              <span class="btn-stack__label">Main label</span>
+              <span class="btn-stack__meta">Helper text</span>
+            </div>
+          </div>
+        </a>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Button as Links</h2>
+    <p class="t-body"><code>btn-link</code> makes a form button behave a like normal link. Includes a few presets for colours. Great for when you need to progressively enhance a form but don't want the form buttom/submit to look like a button.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--inline example">
+          <!-- Button as link -->
+          <button class="btn-link">Button as link</button>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Button as link (disabled) -->
+          <button class="btn-link" disabled>Button as link (disabled)</button>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Input Submit as link -->
+          <input type='submit' value="Input Submit as link" class="btn-link" />
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Button as green link -->
+          <input type='submit' value="Button as green link" class="btn-link -color-green" />
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Button as red link -->
+          <button class="btn-link -color-red">Button as red link</button>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Medium input as link -->
+          <input type='submit' value="Medium input as link" class="btn-link -size-medium" />
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Inherits size from parent -->
+          <div style="font-size: 20px;">
+            <button class="btn-link">Button as link</button>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Button Groups</h2>
+    <p class="t-body"><code>btn-group</code> can be used to group together buttons into a single element. Each button within the group should use the <code>btn--group-item</code> class. Additionally <code>btn--label</code> can be used to create a label element for the group.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="btn-group">
+          <span class="btn btn--group-item btn--label">Title</span>
+          <a class="btn btn--group-item" href="#">Link A</a>
+          <a class="btn btn--group-item btn--color-red" href="#">Link B</a>
+          <a class="btn btn--group-item" href="#">Link C</a>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,111 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Form validation can be done bother server-side or client-side with JavaScript. <br >Typically all forms are progressively enhanced.</p>
+    <p class="t-body">There are slight differences with how this is done, and it's important that the JavaScript validation formats and positions the error messages the same way the server does.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 id="validation" class="t-heading -size-m">Base errors</h2>
+    <p class="t-body">Forms can be rendered from the server with an additional 'base error' message (all error messages in a list).</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <form class="e-form -layout-vertical">
+          <span class="sg-code--block example" data-heading="One error message">
+            <div class="e-form__base-errors">
+              <ul>
+                <li>Username is taken</li>
+              </ul>
+            </div>
+          </span>
+
+          <span class="sg-code--block example" data-heading="Multiple error messages">
+            <div class="e-form__base-errors">
+              <ul>
+                <li>Username is taken</li>
+                <li>Another message</li>
+              </ul>
+            </div>
+          </span>
+        </form>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 id="remote-validation" class="t-heading -size-m">Validation states</h2>
+    <p class="t-body">Forms are a sum of their children. In order to set a field's validation state, this needs to be done directly on the <code class="sg-code">input</code> aswell as the <code class="sg-code">e-form__response</code>.</p>
+    <p class="t-body">Data-attributes are the best choice to do this so that there is no adding and removing of classes, just an update to a single attribute.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <form class="e-form -layout-vertical-inline">
+          <div class="e-form__group">
+            <div class="e-form__label">Pending</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="pending" type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="pending">This field is "pending". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Pending with icon</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="pending" data-icon="true"  type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="pending">This field is "pending". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Valid</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="valid" type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="valid">This field is "valid". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Valid with icon</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="valid" data-icon="true"  type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="valid">This field is "valid". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Invalid</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="invalid" type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="invalid">This field is "invalid". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Invalid with icon</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="invalid" data-icon="true"  type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="invalid">This field is "invalid". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+
+          <div class="e-form__group">
+            <div class="e-form__label">Warning</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="warning" type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="warning">This field is "warning". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+
+          <div class="e-form__group">
+            <div class="e-form__label">Warning with icon</div>
+            <div class="e-form__input">
+              <input class="f-input -type-string" data-status="warning" data-icon="true"  type="text" value="Envato Market">
+            </div>
+            <div class="e-form__response" data-status="warning">This field is "warning". Here's a <%= link_to "link", "#" %> too</div>
+          </div>
+        </form>
+      <% end %>
+    </div>
+  </section>
+</div>

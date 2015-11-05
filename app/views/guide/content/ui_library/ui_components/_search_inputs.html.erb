@@ -1,0 +1,114 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body">Large search inputs used on a number of pages</p>
+  </div>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Size</h2>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+
+      <div style="background-color:#81b254; padding: 20px">
+          <form class="search-field">
+            <div class="search-field__input">
+              <input class="js-term search-field__input-field" name="term" placeholder="Small / Default" type="search">
+            </div>
+            <button class="search-field__button" type="submit">
+              <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+            </button>
+          </form>
+        </div>
+
+        <div style="background-color:#81b254; padding: 20px">
+          <form class="search-field -size-m">
+            <div class="search-field__input">
+              <input class="js-term search-field__input-field" name="term" placeholder="Medium" type="search">
+            </div>
+            <button class="search-field__button" type="submit">
+              <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+            </button>
+          </form>
+        </div>
+
+        <div style="background-color:#81b254; padding: 20px">
+          <form class="search-field -size-l">
+            <div class="search-field__input">
+              <input class="js-term search-field__input-field" name="term" placeholder="Large" type="search">
+            </div>
+            <button class="search-field__button" type="submit">
+              <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+            </button>
+          </form>
+        </div>
+
+
+        <div style="background-color:#81b254; padding: 20px">
+          <form class="search-field -size-xl">
+            <div class="search-field__input">
+              <input class="js-term search-field__input-field" name="term" placeholder="Extra Large" type="search">
+            </div>
+            <button class="search-field__button" type="submit">
+              <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+            </button>
+          </form>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+
+    <section class="sg-content__group">
+      <h2 class="t-heading -size-m">No Border</h2>
+
+      <div class="sg-content__example">
+      <%= code_example('markup') do %>
+
+        <div style="background-color:#81b254; padding: 20px">
+          <form class="search-field -border-none">
+            <div class="search-field__input">
+              <input class="js-term search-field__input-field" name="term" placeholder="No border here" type="search">
+            </div>
+            <button class="search-field__button" type="submit">
+              <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+            </button>
+          </form>
+        </div>
+      <% end %>
+      </div>
+    </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Homepage - OLD</h2>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div style="background-color:#81b254; padding: 20px">
+        <form class="huge-search">
+          <input placeholder="e.g. ‘Responsive WordPress’" type="search">
+          <button type="submit"><span class="e-icon__alt">Search</span></button>
+        </form>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Search</h2>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div style="background-color:#81b254; padding: 20px">
+          <form class="huge-search--search-home">
+            <input placeholder="e.g. ‘Responsive WordPress’" type="search">
+            <button type="submit"><span class="e-icon__alt">Search</span></button>
+          </form>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+</div>

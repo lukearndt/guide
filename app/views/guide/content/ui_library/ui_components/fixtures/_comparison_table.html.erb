@@ -1,0 +1,41 @@
+<table class="table-general -striped -highlight-row -comparison-table -bordered-v -width-three-col-equal">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Regular<br>
+        <%= link_to "view full license", license_terms_path(:regular), :class => "t-link -color-light" %>
+      </th>
+      <th>Extended<br>
+        <%= link_to "view full license", license_terms_path(:extended), :class => "t-link -color-light" %>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Number of end products</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+
+    <tr>
+      <td>Use in a single end product</td>
+      <td><span class="e-icon -icon-ok -color-green"><span class="e-icon__alt">Yes</span></span></td>
+      <td><span class="e-icon -icon-ok -color-green"><span class="e-icon__alt">Yes</span></span></td>
+    </tr>
+
+    <tr>
+      <td>Use in a free end product<br>
+        <small>(more than one end user allowed)</small>
+      </td>
+      <td><span class="e-icon -icon-ok -color-green"><span class="e-icon__alt">Yes</span></span></td>
+      <td><span class="e-icon -icon-ok -color-green"><span class="e-icon__alt">Yes</span></span></td>
+    </tr>
+
+    <tr>
+      <td>Use in an end product that's sold</td>
+      <td><span class="e-icon -icon-cancel -color-red"><span class="e-icon__alt">No</span></span></td>
+      <td><span class="e-icon -icon-ok -color-green"><span class="e-icon__alt">Yes</span></span></td>
+    </tr>
+  </tbody>
+</table>

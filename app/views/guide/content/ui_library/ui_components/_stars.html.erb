@@ -1,0 +1,54 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">Stars are our ratings system, mostly used in item ratings.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Static Stars</h2>
+    <p class="t-body">Static stars are used when the ratings are no longer editable. Usually appears as a form of information for a particular item.</p>
+
+    <div class="sg-content__example">
+      <h3 class="t-heading -size-xs">Standard Example</h3>
+      <%= code_example('markup') do %>
+        <div class="star-rating">
+          <b class="star-rating__star--full" title="1 star">&#9733;</b>
+          <b class="star-rating__star--full" title="2 star">&#9733;</b>
+          <b class="star-rating__star--full" title="3 star">&#9733;</b>
+          <b class="star-rating__star--half" title="4 star">&frac12;</b>
+          <b class="star-rating__star--empty" title="5 star">&#9734;</b>
+        </div>
+      <% end %>
+    </div>
+
+
+    <div class="sg-content__example">
+      <h3 class="t-heading -size-xs">Large Example</h3>
+      <%= code_example('markup') do %>
+        <div class="star-rating--large">
+          <b class="star-rating__star--full" title="1 star">&#9733;</b>
+          <b class="star-rating__star--full" title="2 star">&#9733;</b>
+          <b class="star-rating__star--full" title="3 star">&#9733;</b>
+          <b class="star-rating__star--half" title="4 star">&frac12;</b>
+          <b class="star-rating__star--empty" title="5 star">&#9734;</b>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Interactive Stars</h2>
+    <p class="t-body">Interactive stars are used to collect feedback from users and allow editing if there’s a change of mind. The most common use for interactive stars are ratings of an item under downloads page.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="star-rating" data-view="starRating" data-rating-original="5" data-item-id="3" data-bind="item-star-rating:3">
+          <a href="#" class="star-rating__star--full" title="1 star">&#9733;</a>
+          <a href="#" class="star-rating__star--full" title="2 star">&#9733;</a>
+          <a href="#" class="star-rating__star--full" title="3 star">&#9733;</a>
+          <a href="#" class="star-rating__star--full" title="4 star">&#9733;</a>
+          <a href="#" class="star-rating__star--full" title="5 star">&#9733;</a>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

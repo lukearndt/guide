@@ -1,0 +1,168 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">
+      Boxes are basic build blocks to create a container with padding and a background.
+    </p>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Border radius</h2>
+    <p class="t-body">For complete control border radius is applied with classes. This allows us to stack multiple boxes together.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- No border-radius (default) -->
+        <div class="box">
+          <h4 class="t-heading -size-xxs h-remove-margin">None</h4>
+        </div>
+
+        <!-- All corners -->
+        <div class="box -radius-all">
+          <h4 class="t-heading -size-xxs h-remove-margin">All</h4>
+        </div>
+
+        <!-- Top corners only -->
+        <div class="box -radius-top">
+          <h4 class="t-heading -size-xxs h-remove-margin">Top</h4>
+        </div>
+
+        <!-- Bottom corners only -->
+        <div class="box -radius-bottom">
+          <h4 class="t-heading -size-xxs h-remove-margin">Bottom</h4>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Size</h2>
+    <p class="t-body">For times when extra padding is required.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- Default -->
+        <div class="box">
+          <h4 class="t-heading -size-xxs h-remove-margin">None</h4>
+        </div>
+
+        <!-- Medium -->
+        <div class="box -size-m">
+          <h4 class="t-heading -size-xxs h-remove-margin">Medium</h4>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Colors</h2>
+    <p class="t-body">Boxes come in a limits number of colors.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- light (Default) -->
+        <div class="box">
+          <h4 class="t-heading -size-xs h-remove-margin">(Default)</h4>
+        </div>
+
+        <!-- Light -->
+        <div class="box -color-light">
+          <h4 class="t-heading -size-xs h-remove-margin">Light</h4>
+        </div>
+
+        <!-- Mid -->
+        <div class="box -color-mid">
+          <h4 class="t-heading -size-xs h-remove-margin">Mid</h4>
+        </div>
+
+        <!-- Dark -->
+        <div class="box -color-dark">
+          <h4 class="t-heading -size-xs h-remove-margin">Dark</h4>
+        </div>
+
+        <!-- Green -->
+        <div class="box -color-green">
+          <h4 class="t-heading -size-xs h-remove-margin">Green</h4>
+        </div>
+
+        <!-- Yellow -->
+        <div class="box -color-yellow">
+          <h4 class="t-heading -size-xs h-remove-margin">Yellow</h4>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Borders</h2>
+    <p class="t-body">Boxes come in a limits number of borders.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <!-- (Default) -->
+        <div class="box">
+          <h4 class="t-heading -size-xs h-remove-margin">(Default)</h4>
+        </div>
+
+        <!-- Mid -->
+        <div class="box -border-gray">
+          <h4 class="t-heading -size-xs h-remove-margin">Gray</h4>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Stacking boxes</h2>
+    <p class="t-body">Join boxes together to give visual hierachy.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="box -stacked -color-dark -radius-top h-text-align-center">
+          <h4 class="t-heading -size-xs h-remove-margin">Box heading</h4>
+        </div>
+        <div class="box -radius-bottom">
+          <p class="t-body h-remove-margin">Hello</p>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Group boxes</h2>
+    <p class="t-body">Group boxes visually by using less margin.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <div class="box -radius-all -spacing-small">
+          <h4 class="t-heading -size-xs h-remove-margin">Group 1</h4>
+        </div>
+        <div class="box -radius-all">
+          <h4 class="t-heading -size-xs h-remove-margin">Group 1</h4>
+        </div>
+        <div class="box -radius-all -spacing-small">
+          <h4 class="t-heading -size-xs h-remove-margin">Group 2</h4>
+        </div>
+        <div class="box -radius-all">
+          <h4 class="t-heading -size-xs h-remove-margin">Group 2</h4>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Drop Shadow</h2>
+    <p class="t-body"><strong>Only</strong> for use on dark backgrounds.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <section class="page-section -theme-themeforest">
+          <div class="grid-container">
+            <div class="box -radius-all -drop-shadow">
+              <h4 class="t-heading -color-dark -size-xs h-remove-margin">Hello World</h4>
+            </div>
+          </div>
+        </section>
+      <% end %>
+    </div>
+  </section>
+</div>

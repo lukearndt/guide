@@ -1,0 +1,67 @@
+<div class="sg-content">
+  <div class="sg-content__intro">
+    <p class="t-body -size-l">All form inputs should have a class applied as there are no global input styles.</p>
+  </div>
+
+  <section class="sg-content__group">
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example" data-heading="Regular">
+          <!-- Input -->
+          <textarea class="f-textarea"></textarea>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Placeholder">
+          <!-- Input with placeholder -->
+          <textarea class="f-textarea" placeholder="Envato Market"></textarea>
+        </span>
+
+        <span class="sg-code--block example" data-heading="With value">
+          <!-- Input with value -->
+          <textarea class="f-textarea">Envato Market</textarea>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Disabled">
+          <!-- Disabled Input -->
+          <textarea class="f-textarea" disabled>Envato Market</textarea>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Disabled with placeholder">
+          <!-- Disabled Input with placeholder -->
+          <textarea class="f-textarea" placeholder="Envato Market" disabled></textarea>
+        </span>
+
+        <span class="sg-code--block example" data-heading="Validation States">
+          <!-- Input with validation states -->
+          <textarea class="f-textarea is-invalid">Invalid</textarea>
+          <textarea class="f-textarea is-valid">Valid</textarea>
+          <textarea class="f-textarea is-error">Error</textarea>
+          <textarea class="f-textarea is-pending">Pending</textarea>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 class="t-heading -size-m">Auto-height form</h2>
+    <p class="t-body">The textareaAutoSize JavaScript will style the height of the textarea on the fly.</p>
+    <p class="t-body">todo</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+         <!-- Input with placeholder -->
+        <textarea class="f-textarea -type-autosize" data-view="textareaAutosize">Envato Market</textarea>
+      <% end %>
+    </div>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+         <!-- Input with placeholder -->
+        <textarea class="f-textarea -type-autosize" data-view="textareaAutosize">Envato
+Market
+is
+the
+best!</textarea>
+      <% end %>
+    </div>
+</div>

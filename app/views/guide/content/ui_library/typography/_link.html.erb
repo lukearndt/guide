@@ -1,0 +1,95 @@
+<div class="sg-content">
+  <div id="intro" class="sg-content__intro">
+    <p class="t-body -size-l">There are no default styles applied to <code class="sg-code">a</code>, instead they are applied by a parent or directly using <code class="sg-code">t-link</code>.</p>
+    <p class="t-body">These are designed to be mixed and matched as requried</p>
+
+    <div class="alert-box">
+      <div class="alert-box__icon">
+        <i class="e-icon -icon-flag"></i>
+      </div>
+      <div class="alert-box__message">
+        <p class="t-body -size-m h-remove-margin">
+          <strong>Note:</strong> <code class="sg-code -color-light">t-heading</code> and <code class="sg-code -color-light">t-body</code> have their own default link styles.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="sg-content__group">
+    <h2 id="sizes" class="t-heading -size-m">Color</h2>
+    <p class="t-body">A link doesn't always have to be blue, these are the other presets.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Default -->
+          <%= link_to "Default", "#", :class => "t-link" %>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Dark -->
+          <%= link_to "Dark", "#", :class => "t-link -color-dark" %>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Light text (for dark backgrounds) -->
+          <div style="background:#82b541;">
+            <%= link_to "Light", "#", :class => "t-link -color-light" %>
+          </div>
+        </span>
+
+        <span class="sg-code--block example">
+          <!-- Inherit text (for custom backgrounds) -->
+          <div style="background:#82b541; color: #efa506;">
+            <%= link_to "Light", "#", :class => "t-link -color-inherit" %>
+          </div>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 id="sizes" class="t-heading -size-m">Decoration</h2>
+    <p class="t-body">Not all links need to have an underline, take control of the decoration and hover decoration.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Default -->
+          <%= link_to "Default", "#", :class => "t-link" %>
+        </span>
+        <span class="sg-code--block example">
+          <!-- Reversed (underline on hover) -->
+          <%= link_to "Reversed", "#", :class => "t-link -decoration-reversed" %>
+        </span>
+        <span class="sg-code--block example">
+          <!-- -decoration-none -->
+          <%= link_to "No decoration", "#", :class => "t-link -decoration-none" %>
+        </span>
+
+      <% end %>
+    </div>
+  </section>
+
+  <section class="sg-content__group">
+    <h2 id="sizes" class="t-heading -size-m">Weight</h2>
+    <p class="t-body">Control a link's weight independently of its parent's.</p>
+
+    <div class="sg-content__example">
+      <%= code_example('markup') do %>
+        <span class="sg-code--block example">
+          <!-- Bold -->
+          <%= link_to "Bold", "#", :class => "t-link -weight-bold" %>
+        </span>
+        <span class="sg-code--block example">
+          <!-- Normal -->
+          <%= link_to "Normal", "#", :class => "t-link -weight-normal" %>
+        </span>
+        <span class="sg-code--block example">
+          <!-- Light -->
+          <%= link_to "Light", "#", :class => "t-link -weight-light" %>
+        </span>
+      <% end %>
+    </div>
+  </section>
+</div>
