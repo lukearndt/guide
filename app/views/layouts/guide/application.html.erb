@@ -15,7 +15,7 @@
 
     <%#= stylesheet_link_tag("guide/application", :media => "all") %>
 
-    <%# TEMP: Hotlink to Envato Market prod assets %>
+    <%# TEMP: Hotlink to ACME Pty Ltd prod assets %>
     <%= stylesheet_link_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/index-180257d94c3a96c2881d3d73e0221f10.css", :media => "all") %>
 
 
@@ -28,7 +28,7 @@
       <aside class="js-layout__sidebar sg-layout__sidebar">
         <div class="sg-drawer">
           <div class="sg-drawer__logo">
-            <%= link_to image_tag("guide/envato-market-styleguide--light-v3.svg", :alt => "Envato Market Styleguide"), root_path, :class => "sg-header__logo" %>
+            <h2 class="t-heading -color-light -size-m">ACME Styleguide</h2>
           </div>
           <div class="sg-drawer__nav">
             <%= yield :sidebar %>
@@ -63,7 +63,7 @@
       </main>
     </div>
 
-    <%# TEMP: Hotlink to Envato Market prod assets %>
+    <%# TEMP: Hotlink to ACME Pty Ltd prod assets %>
     <%= stylesheet_link_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/index-180257d94c3a96c2881d3d73e0221f10.css", :media => "all") %>
     <%= javascript_include_tag("http://dmypbau5frl9g.cloudfront.net/assets/guide/application-6bf31d02d9fa60093d0478e4c98edd0b.js") %>
     <script>$(function(){viewloader.execute(Views);});</script>
